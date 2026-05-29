@@ -32,7 +32,7 @@ echo -e "${CYAN}=== Запуск скрипта: $SQL_FILE ===\n${NC}"
 echo -e "${PURPLE}\n===КОД===\n${NC}"
 cat $SQL_FILE
 
-# sleep 2
+sleep 1
 
 echo -e "${PURPLE}\n\n===ВЫВОД===\n${NC}"
 # Запускаем psql для найденного файла
