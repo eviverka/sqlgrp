@@ -17,5 +17,5 @@ SELECT
     bwd.money*cur.rate_to_usd as currency_in_usd
 from balance_with_date as bwd 
 join currency as cur on cur.id = bwd.currency_id AND cur.updated = bwd.actual_date
-full join "user" as u on u.id = bwd.user_id
+left join "user" as u on u.id = bwd.user_id
 ORDER BY name desc, lastname ASC, currency_name ASC;
